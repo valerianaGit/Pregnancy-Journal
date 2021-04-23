@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:pregnancy_journal/models/journal_entry.dart';
-import 'package:pregnancy_journal/models/journal_entry_data.dart';
-import 'package:provider/provider.dart';
 import 'package:intl/intl.dart';
+import 'package:pregnancy_journal/screens/journal_entry_screen.dart';
+import 'package:pregnancy_journal/constants/constants.dart';
 
 // create cards that will show up as a journal entry
 // they have rounded corners
 // has date and a color associated to a month
 //
-//TODO: - MAKE CARDS TAPPABLE
+
 class JournalCard extends StatelessWidget {
   final String content;
   final DateTime date;
+
   JournalCard({this.content, this.date});
 //https://flutteragency.com/how-to-format-datetime-in-flutter/
   String dateFormatterToDateOnly(DateTime date) {
@@ -22,8 +22,12 @@ class JournalCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        //call back for going into on tap the card
-        print('tapped card $content');
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => JournalEntryScreen(incomingText: content),
+          ),
+        );
       },
       child: Padding(
         padding:
@@ -39,8 +43,7 @@ class JournalCard extends StatelessWidget {
             alignment: Alignment.center,
             child: Text(
               dateFormatterToDateOnly(date),
-
-              style: TextStyle(), //TODO: STYLE TEXT- IN constants
+              style: kcardTextStyle,
             ),
           ),
         ),

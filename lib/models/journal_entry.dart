@@ -1,9 +1,5 @@
-import 'package:flutter/material.dart';
-
 class JournalEntry {
   String content;
-  DateTime date; // = DateTime.now();
-  //String date;
-  // Image image;
+  DateTime date;
   JournalEntry({this.date, this.content});
 }

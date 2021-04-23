@@ -11,8 +11,7 @@ class EntriesList extends StatelessWidget {
         return ListView.builder(
           itemBuilder: (context, index) {
             final entry = entryData.cardList[index];
-            print('entry content ${entry.content}');
-            print('entry date ${entry.date}');
+
             return JournalCard(
               content: entry.content,
               date: entry.date,
