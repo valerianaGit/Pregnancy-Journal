@@ -1,6 +1,8 @@
 # pregnancy_journal
 
-This flutter project is a 2 screen mobile application. We used the Provider package for state management as well as intl to format some dates. 
+This flutter project is a 2 screen mobile application. It serves as a journaling/ notes app. where the main screen holds cards with entry dates and one can click on the card to read that post. Also, one can create a new post. 
+
+I used the Provider package for state management as well as intl to format some dates. 
 This is a follow up project I created after finishing the Flutter bootcamp to expanding on the Flutter world. 
 
 ## GIFS
