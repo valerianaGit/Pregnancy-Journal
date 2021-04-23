@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 class JournalEntry {
   String content;
-  DateTime date;
-  JournalEntry(this.date, this.content);
-
-  void addAnotherEntry() {}
+  DateTime date; // = DateTime.now();
+  //String date;
+  // Image image;
+  JournalEntry({this.date, this.content});
 }
