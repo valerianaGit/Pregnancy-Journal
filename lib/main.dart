@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'screens/home_page.dart';
-
 import 'package:pregnancy_journal/models/journal_entry_data.dart';
 
 void main() {

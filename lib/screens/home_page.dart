@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
 import 'package:pregnancy_journal/screens/journal_entry_screen.dart';
-
 import 'package:pregnancy_journal/widgets/entries_list.dart';
 
 class MyHomePage extends StatelessWidget {

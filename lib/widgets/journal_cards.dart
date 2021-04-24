@@ -13,6 +13,7 @@ class JournalCard extends StatelessWidget {
   final DateTime date;
 
   JournalCard({this.content, this.date});
+  //format dates 
 //https://flutteragency.com/how-to-format-datetime-in-flutter/
   String dateFormatterToDateOnly(DateTime date) {
     return DateFormat('dd / MM-yyyy').format(date);
@@ -22,6 +23,8 @@ class JournalCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
+        // send data to another screen
+        // https://flutter.dev/docs/cookbook/navigation/passing-data
         Navigator.push(
           context,
           MaterialPageRoute(
@@ -36,7 +39,7 @@ class JournalCard extends StatelessWidget {
           elevation: 5,
 
           color: Colors.purple[
-              100], //TODO: POSSIBLY change to color shades of purple from 100 to 900 according to the month they are on
+              100],
 
           child: Container(
             height: 50.0,

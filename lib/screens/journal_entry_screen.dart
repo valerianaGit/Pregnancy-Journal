@@ -22,7 +22,7 @@ class JournalEntryScreen extends StatelessWidget {
                 height: 50.0,
               ),
               Text('Feelings, desires, anything goes in this space',
-                  style: ktitleTextStyle), //TODO: - create a style for these
+                  style: ktitleTextStyle), 
               SizedBox(
                 height: 50.0,
               ),

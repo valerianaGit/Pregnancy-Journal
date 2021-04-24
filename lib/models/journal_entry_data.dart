@@ -1,8 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'dart:collection';
-import 'journal_entry.dart';
 import 'package:pregnancy_journal/widgets/journal_cards.dart';
-import 'package:pregnancy_journal/models/journal_entry.dart';
+
 
 class JournalEntryData extends ChangeNotifier {
   final List<JournalCard> _cardList = [
