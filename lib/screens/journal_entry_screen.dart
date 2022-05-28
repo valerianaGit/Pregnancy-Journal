@@ -3,6 +3,22 @@ import 'package:provider/provider.dart';
 import 'package:pregnancy_journal/models/journal_entry_data.dart';
 import 'package:pregnancy_journal/constants/constants.dart';
 
+//TODO: UPDATE Journal entry screen as statfeul widget since NEWCONTENT needs to mutate?
+
+// class JournalEntryScreen extends StatefulWidget {
+//   const JournalEntryScreen({Key key}) : super(key: key);
+
+//   @override
+//   State<JournalEntryScreen> createState() => _JournalEntryScreenState();
+// }
+
+// class _JournalEntryScreenState extends State<JournalEntryScreen> {
+//   @override
+//   Widget build(BuildContext context) {
+
+//   }
+// }
+
 class JournalEntryScreen extends StatelessWidget {
   String newContent;
   final String incomingText;
@@ -22,7 +38,7 @@ class JournalEntryScreen extends StatelessWidget {
                 height: 50.0,
               ),
               Text('Feelings, desires, anything goes in this space',
-                  style: ktitleTextStyle), 
+                  style: ktitleTextStyle),
               SizedBox(
                 height: 50.0,
               ),
