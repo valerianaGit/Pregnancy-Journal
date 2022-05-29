@@ -33,6 +33,12 @@ class MyApp extends StatelessWidget {
  * Provider https://pub.dev/packages/provider
  * to manage state 
  * 
+ *   drift: ^1.6.0  - store data locally
+  path: ^1.8.1 - find a path for database
+
+  dev_ dependencies:
+   drift_dev: ^1.6.0 & build_runner: ^2.1.10 - DRIFT dev dependencies to generate code  
+ * 
  *      Tips 
  * //makes textfield scrollable - wrap in Expanded widget + maxlines = null 
   //scrollable Text - > wrap in SingleChildScrollView -> wrap that in Expanded 
