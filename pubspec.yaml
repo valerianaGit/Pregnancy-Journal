@@ -31,8 +31,11 @@ dependencies:
   provider: ^5.0.0
   intl: ^0.17.0
   drift: ^1.6.0
+  path: ^1.8.1
 
 dev_dependencies:
+  drift_dev: ^1.6.0
+  build_runner: ^2.1.10
   flutter_test:
     sdk: flutter
 
